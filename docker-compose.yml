@@ -1,0 +1,18 @@
+version: '3.6'
+
+# This is dev-environment configuration only to simplify debugging
+# DONT USE IN PRODUCTION
+
+services:
+  # vault cluster for transit
+  vault1:
+    # docker source: https://github.com/hashicorp/docker-vault/blob/402f2e30796f5ab2dcbd414d5f910b4f3332384b/0.X/Dockerfile
+    image: vault
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - 8200:8200
+    volumes:
+      - ./vault/file:/vault/file
+      - ./vault/logs:/vault/logs
+    command: server -dev

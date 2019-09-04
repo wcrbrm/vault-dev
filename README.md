@@ -1,2 +1,3 @@
-# vault-simplest
-Vault simplest example of 1 cluster for local running
+# vault-dev
+
+Vault simplest example of cluster in dev mode for local execution
