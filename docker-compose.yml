@@ -15,4 +15,4 @@ services:
     volumes:
       - ./vault/file:/vault/file
       - ./vault/logs:/vault/logs
-    command: server -dev
+    command: server -dev -dev-root-token-id="xDNq4P1jJYF9Gm60GekUh8TW"
