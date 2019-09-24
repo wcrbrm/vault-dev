@@ -12,7 +12,4 @@ services:
       - IPC_LOCK
     ports:
       - 8200:8200
-    volumes:
-      - ./vault/file:/vault/file
-      - ./vault/logs:/vault/logs
     command: server -dev -dev-listen-address=0.0.0.0:8200 -dev-root-token-id="xDNq4P1jJYF9Gm60GekUh8TW"
